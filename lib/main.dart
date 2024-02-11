@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       routerConfig: appRouter,
       title: 'Material3 Theme',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 0).getTheme(),
+      theme: AppTheme(selectedColor: 13).getTheme(),
 
     
     );
