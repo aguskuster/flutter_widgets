@@ -45,11 +45,36 @@ class _ButtonsView extends StatelessWidget {
             OutlinedButton.icon(onPressed: (){}, icon: const Icon(Icons.account_box_outlined), label: const Text("Outlined icon")),
             TextButton(onPressed: (){}, child: const Text("Text")),
             TextButton.icon(onPressed: (){}, icon: const Icon(Icons.access_time_filled_rounded), label: const Text("Text icon")),
-              
+            
+            const CustomButton(),
             IconButton(onPressed: (){}, icon: const Icon(Icons.access_alarm_rounded)),
-            IconButton(onPressed: null, icon: const Icon(Icons.access_alarm_rounded)),
+            const IconButton(onPressed: null, icon: Icon(Icons.access_alarm_rounded)),
             IconButton(onPressed: (){},style: ButtonStyle( backgroundColor: MaterialStatePropertyAll(colors.primary), iconColor: const MaterialStatePropertyAll(Colors.white)), icon: const Icon(Icons.access_alarm_rounded)),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    final colors = Theme.of(context).colorScheme;
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: colors.primary,
+        child: InkWell(
+          focusColor: colors.secondary,
+          onTap: (){},
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical:10),
+            child: Text("Hola mundo", style: TextStyle(color: Colors.white))),
         ),
       ),
     );
