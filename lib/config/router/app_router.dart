@@ -37,5 +37,12 @@ final appRouter = GoRouter(
           child: ProgressScreen(),
         ),
       ),
+      GoRoute(
+        path: '/snackbar',
+        name: SnackBarScreen.name,
+        pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
+          child: SnackBarScreen(),
+        ),
+      ),
   ],
 );
