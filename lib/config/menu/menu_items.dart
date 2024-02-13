@@ -21,5 +21,6 @@ class MenuItem{
 const appMenuItems = <MenuItem> [
   MenuItem(title:"Botones" , subtitle: "Listado de botones" , link: "/buttons" , icon: Icons.backpack),
   MenuItem(title:"Tarjetas" , subtitle: "Contenedor Estilizado" , link: "/cards" , icon: Icons.credit_card),
+  MenuItem(title:"Progress Bar" , subtitle: "Pantalla de carga" , link: "/progress" , icon: Icons.bar_chart_rounded),
 
 ];
