@@ -44,5 +44,12 @@ final appRouter = GoRouter(
           child: SnackBarScreen(),
         ),
       ),
+      GoRoute(
+        path: '/animated_container',
+        name: AnimatedScreen.name,
+        pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
+          child: AnimatedScreen(),
+        ),
+      ),
   ],
 );
