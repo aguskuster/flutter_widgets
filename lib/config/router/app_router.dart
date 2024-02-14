@@ -51,5 +51,12 @@ final appRouter = GoRouter(
           child: AnimatedScreen(),
         ),
       ),
+      GoRoute(
+        path: '/ui_controls',
+        name: UiControlScreen.name,
+        pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
+          child: UiControlScreen(),
+        ),
+      ),
   ],
 );

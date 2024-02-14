@@ -24,5 +24,6 @@ const appMenuItems = <MenuItem> [
   MenuItem(title:"Progress Bar" , subtitle: "Pantalla de carga" , link: "/progress" , icon: Icons.bar_chart_rounded),
   MenuItem(title:"SnackBar" , subtitle: "Mensajes emergentes" , link: "/snackbar" , icon: Icons.message),
   MenuItem(title:"Animated Container", subtitle: "Contenedor aniumado", link: "/animated_container", icon: Icons.animation),
+  MenuItem(title:"UI Controls" , subtitle: "Controles de ui" , link: "/ui_controls" , icon: Icons.text_fields),
 
 ];
