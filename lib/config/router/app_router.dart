@@ -58,5 +58,12 @@ final appRouter = GoRouter(
           child: UiControlScreen(),
         ),
       ),
+      GoRoute(
+        path: '/tutorial',
+        name: AppTutorialScreen.name,
+        pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
+          child: AppTutorialScreen(),
+        ),
+      ),
   ],
 );
