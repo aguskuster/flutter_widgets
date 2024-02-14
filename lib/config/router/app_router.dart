@@ -64,6 +64,14 @@ final appRouter = GoRouter(
         pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
           child: AppTutorialScreen(),
         ),
+
+      ),
+      GoRoute(
+        path: '/infinite',
+        name: InfiniteScroll.name,
+        pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
+          child: InfiniteScroll(),
+        ),
       ),
   ],
 );

@@ -27,5 +27,6 @@ const appMenuItems = <MenuItem> [
   MenuItem(title:"UI Controls" , subtitle: "Controles de ui" , link: "/ui_controls" , icon: Icons.text_fields),
 
   MenuItem(title:"Tutorial" , subtitle: "Tutorial de Flutter" , link: "/tutorial" , icon: Icons.school),
+  MenuItem(title:"Scroll Infinito" , subtitle: "Scroll infinitouu" , link: "/infinite" , icon: Icons.replay_circle_filled_outlined),
 
 ];
