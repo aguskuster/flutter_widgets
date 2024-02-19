@@ -8,3 +8,6 @@ export 'package:flutter_widgets/presentation/screens/snackbar/snackbar_screen.da
 export 'package:flutter_widgets/presentation/screens/progress/progress_screen.dart';
 export 'package:flutter_widgets/presentation/screens/infinite_scroll/infinite_scroll_screen.dart';
 export 'package:flutter_widgets/presentation/screens/ui_controls/ui_controls_screen.dart';
+export 'package:flutter_widgets/presentation/screens/counter/counter_screen.dart';
+
+export 'package:flutter_widgets/presentation/screens/themes/themes_screen.dart';

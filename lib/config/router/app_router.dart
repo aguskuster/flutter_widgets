@@ -73,5 +73,19 @@ final appRouter = GoRouter(
           child: InfiniteScroll(),
         ),
       ),
+      GoRoute(
+        path: '/counter-screen',
+        name: CounterScreen.name,
+        pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
+          child: CounterScreen(),
+        ),
+      ),
+      GoRoute(
+        path: '/themes',
+        name: ThemeScreen.name,
+        pageBuilder: (context, state) =>  const MaterialPage<dynamic>(
+          child: ThemeScreen(),
+        ),
+      ),
   ],
 );

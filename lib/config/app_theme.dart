@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const colorList = [
   Colors.deepPurple,
-  Colors.green,
+Colors.green,
   Colors.blue,
   Colors.red,
   Colors.orange,
@@ -20,13 +20,14 @@ const colorList = [
 
 class AppTheme {
   final int selectedColor;
-
-  AppTheme({this.selectedColor = 0})
+  final bool isDarkMode;
+  AppTheme({this.isDarkMode = false,this.selectedColor = 0})
       : assert(selectedColor >= 0 && selectedColor < colorList.length,
             'Invalid color index');
 
   ThemeData getTheme() {
     return ThemeData(
+        brightness: isDarkMode ? Brightness.dark : Brightness.light,
         colorSchemeSeed: colorList[selectedColor],
         useMaterial3: true,
         appBarTheme: const AppBarTheme(centerTitle: false));
